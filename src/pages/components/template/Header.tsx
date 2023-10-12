@@ -23,7 +23,7 @@ export default function Header(props: Props) {
     return (
         <>
             <header className={style.headerWrap}>
-                <h1>{state.title}</h1>
+                <h1 className={style.title}>{state.title}</h1>
                 <Listlink linkdata={Data.linkdata} />
             </header>
         </>
