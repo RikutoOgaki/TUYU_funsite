@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import style from '@/styles/components/common/listlink.module.scss'
 
 type Props = {
     linkdata: Array<Data>
@@ -25,11 +26,11 @@ export function Listlink(props: Props) {
 
     return (
         <>
-            <ul>
+            <ul className={style.List}>
                 {
                     state.linkdata.map((v, idx) =>
-                        <li key={idx}>
-                            <Link href={v.linkaddress}>{v.link}</Link>
+                        <li key={idx} className={style.listItem}>
+                            <Link className={style.link} href={v.linkaddress}>{v.link}</Link>
                         </li>
                     )
                 }

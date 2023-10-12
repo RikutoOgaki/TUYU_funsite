@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '@/pages/components/template/Header'
+import Top from '@/pages/components/Top'
 import style from '@/styles/Home.module.scss'
 
 export default function Home() {
@@ -12,11 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.wrap}>
-        <Header title='TUYU' />
-        <main>
-
-        </main>
-
+        <Top />
       </div>
     </>
   )

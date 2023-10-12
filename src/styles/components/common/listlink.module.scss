@@ -1,0 +1,13 @@
+.List {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    .listItem {
+        .link {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
